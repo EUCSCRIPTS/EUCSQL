@@ -22,4 +22,4 @@ join v_R_System vrs on vrs.ResourceID = assc.ResourceID
 Join v_GS_OPERATING_SYSTEM os on os.ResourceID=vrs.ResourceID
 join v_GS_WORKSTATION_STATUS wks on wks.ResourceID = assc.ResourceID
 join v_UpdateScanStatus wsus on wsus.ResourceID = assc.ResourceID
-where a.AssignmentName = "Deployment Name"
+where a.AssignmentName = 'Deployment Name'
