@@ -1,0 +1,5 @@
+select netbios_name0,articleid,title from v_r_system vrs
+join v_update_compliancestatusall vuc on vuc.ResourceID=vrs.ResourceID
+join v_UpdateInfo ui on ui.CI_ID=vuc.CI_ID
+ where vuc.Status = 2 and vrs.Operating_System_Name_and0 like '%Workstation 10.0%' and ui.ArticleID not in ('NULL')
+ order by Netbios_Name0
